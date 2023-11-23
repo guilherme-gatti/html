@@ -6,15 +6,54 @@ body{
     background-color: black;
 }
 
-p{
-    height: 93vh;
+h1{
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-variant: small-caps;
+    letter-spacing: 0.3em;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+h2{
+    font-size: 1.3em;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-variant: small-caps;
+    text-align: center;
+    margin-top: 0px;
+}
+
+p#borda{
+    position: relative;
+}
+
+p#texto{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width:400px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: black;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-variant: small-caps;
+    text-align: center;
+    border: 2px solid var(--glow-color);
+    box-shadow: 2px 2px 5px 1px var(--glow-color);
+}
+
+p#botao{
+    height: 60vh;
     position: relative;
 }
 
 button{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 70%;
     transform: translate(-50%, -50%);
 }
 
