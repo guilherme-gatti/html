@@ -25,6 +25,11 @@ h2{
     margin-top: 0px;
 }
 
+a{
+    color: var(--glow-color);
+    text-decoration: none;
+}
+
 p#borda{
     position: relative;
 }
@@ -33,7 +38,6 @@ p#texto{
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
-    width:400px;
     padding: 10px;
     border-radius: 8px;
     background-color: black;
@@ -53,7 +57,7 @@ p#botao{
 button{
     position: absolute;
     left: 50%;
-    top: 70%;
+    top: 80%;
     transform: translate(-50%, -50%);
 }
 
@@ -120,17 +124,17 @@ glowing.txt{
     transition: opacity 100ms linear;
 }
 
-.glowing-btn:hover{
+.glowing-btn:hover > a{
     color: rgba(0, 0, 0, 0.8);
     text-shadow: none;
     animation: none;
 }
 
-.glowing-btn:hover .glowing-txt{
+.glowing-btn:hover .glowing-txt > a{
     animation: none;
 }
 
-.glowing-btn:hover .faulty-letter {
+.glowing-btn:hover .faulty-letter > a{
     animation: none;
     text-shadow: none;
     opacity: 1;
